@@ -68,13 +68,13 @@ decode_results results;
 
 //-------------------- Taster --------------------------
 
-const int keyMutePIN       = 2;  // Taster 1 (Mute)
-const int keyModusPIN      = 4;  // Taster 2 (Modus)
-const int keyMarkerPIN     = 7;  // Taster 3 (Marker)
+const int keyMutePIN       = 5;  // Taster 1 (Mute)
+const int keyMarkerPIN     = 4;  // Taster 3 (Marker)
+const int keyModusPIN      = 2;  // Taster 2 (Modus)
 
+#define LEDMUTE              4   // NeoPixel für Mute
 #define LEDMARKER            5   // NeoPixel für Marker
 #define LEDMODUS             6   // NeoPixel für Modus
-#define LEDMUTE              4   // NeoPixel für Mute
 
 //-------------------- Variablen -----------------------
 

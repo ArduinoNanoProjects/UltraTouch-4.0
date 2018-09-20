@@ -7,6 +7,8 @@ int KeySession(){
   keyMute = digitalRead(keyMutePIN);      // TASTER MUTE/UNMUTE 
   keyModus = digitalRead(keyModusPIN);    // TASTER MODUS
 
+Serial.print(keyModus);
+Serial.println();
   
   if (irrecv.decode(&results)){
     //Modus OK
@@ -139,8 +141,8 @@ void Modus(){
  * Unmute / Mute
  */
 void UnmuteToMute() {
-    neoGlue("red", "long", LEDMODUS);
-    //neo(On, 0, 0, LEDMODUS); //1-grün 
+    //neoGlue("red", "long", LEDMODUS);
+    neo(On, 0, 0, LEDMODUS); //1-rot 
 
     //NEO PIXEL STATUS
     if (keyMute == HIGH) {
